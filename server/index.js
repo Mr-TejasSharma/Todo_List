@@ -9,13 +9,13 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://todo-list-y574.onrender.com/",
     methods: ["GET", "POST"],
     credentials: true,
   })
 );
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "http://localhost:5173");
+  res.header("Access-Control-Allow-Origin", "https://todo-list-y574.onrender.com/");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
