@@ -9,7 +9,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: "https://todo-list-y574.onrender.com/",
+    origin: "https://todo-list-y574.onrender.com",
     methods: ["GET", "POST"],
     credentials: true,
   })
