@@ -1,0 +1,45 @@
+# Node modules (backend and frontend)
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+
+# OS/system files
+.DS_Store
+Thumbs.db
+
+# IDEs/editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Optional: coverage reports
+coverage/
+
+# Optional: local database dumps or data files
+*.local
+*.bak
+*.sqlite
+*.tgz
+
+# Optional: debug or temp folders
+tmp/
+temp/
+.cache/

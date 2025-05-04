@@ -23,12 +23,13 @@ app.use((req, res, next) => {
   next();
 });
 
+require('dotenv').config();
+
 mongoose
-  .connect(
-    "mongodb+srv://tejas123:hsDhDNcOtJDf51d1@cluster0.ezcmnjg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-  )
+  .connect(process.env.MONGODB_URI)
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.log("Mongo error", err));
+
 
 app.post("/register", async (req, res) => {
   const { name, email, password } = req.body;
