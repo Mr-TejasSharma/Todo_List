@@ -16,7 +16,7 @@ function Signup() {
 
     console.log(email,password,name);
     try{
-      const res=await fetch("http://localhost:3001/register", {
+      const res=await fetch("http://https://todo-list-03da.onrender.com/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
