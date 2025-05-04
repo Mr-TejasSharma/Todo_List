@@ -14,7 +14,7 @@ function Home() {
   useEffect(() => {
     const fetchTasks = async () => {
       try {
-        const res = await fetch("http://https://todo-list-03da.onrender.com/get-tasks", {
+        const res = await fetch("https://todo-list-y574.onrender.com/get-tasks", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ email }),
@@ -41,7 +41,7 @@ function Home() {
     }
     console.log("Submitting task:", task);
     try {
-      const res = await fetch("http://https://todo-list-03da.onrender.com/add-task", {
+      const res = await fetch("https://todo-list-y574.onrender.com/add-task", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -66,7 +66,7 @@ function Home() {
 
   const handleDelete = async (index) => {
     try {
-      const res = await fetch("http://https://todo-list-03da.onrender.com/delete-task", {
+      const res = await fetch("https://todo-list-y574.onrender.com/delete-task", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, index }),
@@ -83,7 +83,7 @@ function Home() {
 
   const toggleComplete = async (index) => {
     try {
-      const res = await fetch("https://todo-list-03da.onrender.com/toggle-task", {
+      const res = await fetch("https://todo-list-y574.onrender.com/toggle-task", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, index }),
